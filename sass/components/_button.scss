@@ -1,0 +1,48 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block; /* <-- Always use this for a link buttons to add some padding */
+    border-radius: 100px;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba($color-black, 0.4);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px); /* <-- Active = On-Click State */
+    box-shadow: 0 5px 10px rgba($color-black, 0.6);
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: #777;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &__blur {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    color: $color-white;
+    margin-top: 10rem;
+
+    &::after {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+  }
+}

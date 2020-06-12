@@ -1,0 +1,24 @@
+.header {
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.5)
+    ),
+    url('/img/header.jpg');
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  padding: 2rem;
+
+  &__text-box {
+    position: absolute;
+    width: 50%;
+    top: 55%; /* center items using translate */
+    left: 50%; /* center items using translate */
+    transform: translate(-50%, -50%); /* center items using translate */
+
+    text-align: center; /* <-- Centers Button */
+  }
+}
