@@ -18,10 +18,11 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #eee;
-  font-family: 'EB Garamond', serif; }
+  font-family: "EB Garamond", serif; }
 
 .logo {
   font-size: 3rem;
+  font-family: "EB Garamond", serif;
   display: block;
   position: absolute;
   padding: 3px;
@@ -34,9 +35,6 @@ body {
   display: block; }
 
 .season {
-  position: absolute;
-  top: 50%;
-  left: 40%;
   color: #eee;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
@@ -44,12 +42,13 @@ body {
 
 .section-heading {
   color: #eee;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  font-family: "EB Garamond", serif; }
 
 .u-margin-bottom {
   margin-bottom: 20rem; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
@@ -58,7 +57,8 @@ body {
   border-radius: 100px;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  font-family: "EB Garamond", serif; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -104,7 +104,8 @@ body {
     transform: translate(-50%, -50%);
     /* center items using translate */
     text-align: center;
-    /* <-- Centers Button */ }
+    /* <-- Centers Button */
+    font-family: "EB Garamond", serif; }
 
 .row {
   max-width: 114rem;
@@ -231,6 +232,7 @@ body {
             color: inherit;
             text-decoration: none;
             font-size: 5rem;
+            font-family: "EB Garamond", serif;
             text-transform: uppercase; }
             .menu-wrap__menu > div > div > ul > li > a:hover {
               border-bottom: 2px solid #fff;
@@ -243,7 +245,8 @@ body {
   left: -8rem;
   letter-spacing: 3px;
   transform: rotate(-90deg);
-  font-style: italic; }
+  font-style: italic;
+  font-family: "EB Garamond", serif; }
 
 .heading-primary {
   margin-bottom: 20rem; }
@@ -258,6 +261,10 @@ body {
     position: absolute;
     top: 25%;
     left: 40%; }
+  .heading-primary > .season {
+    position: absolute;
+    top: 50%;
+    left: 40%; }
   .heading-primary > .chapter-number {
     position: absolute;
     top: -10%;
@@ -269,3 +276,6 @@ body {
 .section-photography {
   background-color: #aaa;
   padding: 25rem 0 30rem 0; }
+
+.section-contact {
+  padding: 10rem 0 5rem 0; }

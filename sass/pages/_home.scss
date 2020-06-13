@@ -18,6 +18,12 @@
     left: 40%;
   }
 
+  & > .season {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+  }
+
   & > .chapter-number {
     position: absolute;
     top: -10%;
@@ -32,4 +38,8 @@
 .section-photography {
   background-color: $color-light-3;
   padding: 25rem 0 30rem 0;
+}
+
+.section-contact {
+  padding: 10rem 0 5rem 0;
 }
