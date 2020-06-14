@@ -46,7 +46,7 @@
       position: relative;
       width: 100%;
       height: 2px;
-      background-color: $color-light;
+      background-color: $color-white;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -149,4 +149,6 @@
   transform: rotate(-90deg);
   font-style: italic;
   font-family: $main-font-style;
+  color: $color-white;
+  text-shadow: 3rem 0 1.5rem rgba($color-black, 0.7);
 }

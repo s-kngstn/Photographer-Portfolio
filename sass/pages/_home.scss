@@ -14,13 +14,13 @@
   }
   &-sub {
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 40%;
   }
 
   & > .season {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 40%;
   }
 
@@ -41,5 +41,31 @@
 }
 
 .section-contact {
-  padding: 10rem 0 5rem 0;
+  padding: 20rem 0 20rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-light-2,
+    $color-light-2
+  );
+  text-shadow: 0 0.5rem 3rem rgba($color-black, 0.1);
+}
+
+.contact {
+  background-image: linear-gradient(
+      90deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(/img/contact.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+  color: $color-light-3;
+  height: 50rem;
+
+  &__form {
+    width: 50%;
+    padding: 4rem;
+  }
 }
