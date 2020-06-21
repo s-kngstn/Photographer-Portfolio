@@ -16,3 +16,8 @@ body {
   background-color: $color-dark;
   color: $color-light-2;
 }
+
+::selection {
+  background-color: $color-light-2;
+  color: $color-black;
+}
